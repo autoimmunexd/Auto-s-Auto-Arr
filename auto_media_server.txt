@@ -1,0 +1,24 @@
+#clone repository
+
+ansible.cfg
+
+[defaults]
+inventory=inventory
+host_key_checking=False
+
+ask user for IP address of server, the username and password of the user account, and create inventory file with it
+
+inventory
+
+[master]
+192.168.0.144
+
+[master:vars]
+ansible_ssh_user=ansible
+ansible_ssh_pass=ansible
+ansible_become_pass=ansible
+
+ansible-playbook <name of .yaml>
+
+
+#lineinfile to change mountpoints for docker containers?

@@ -1,0 +1,7 @@
+[master]
+IPADDRESS
+
+[master:vars]
+ansible_ssh_user=
+ansible_ssh_pass=
+ansible_become_pass=
